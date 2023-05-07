@@ -9,7 +9,7 @@ public class Solution42842 {
         for (int x = 1; x < brown; x++) {
             int y = area / x;
 
-            if ((x - 2) * (y - 2) == yellow) {
+            if ((x - 2) * (y - 2) == yellow && x >= y) {
                 answer[0] = x;
                 answer[1] = y;
             }
