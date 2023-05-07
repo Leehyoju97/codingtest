@@ -12,8 +12,6 @@ public class Solution42840 {
     int[] rule2 = {2, 1, 2, 3, 2, 4, 2, 5};
     int[] rule3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
 
-    int[] result;
-
     // 규칙에 맞게 배열에 값 넣어주는 메소드
     public void insert(int[] array, int[] rule) {
         int index = 0;
@@ -74,7 +72,7 @@ public class Solution42840 {
             }
         }
 
-        result = new int[index];
+        int[] result = new int[index];
 
         for (int i = 0; i < index; i++) {
             result[i] = temp[i];
