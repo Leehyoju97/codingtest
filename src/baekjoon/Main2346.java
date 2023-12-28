@@ -34,8 +34,8 @@ public class Main2346 {
                     move--;
                     deque.addLast(deque.pollFirst());
                 }
-            } else if (move != 0) {
-                while (move < 0) {
+            } else if (move < 0) {
+                while (move != 0) {
                     move++;
                     deque.addFirst(deque.pollLast());
                 }
