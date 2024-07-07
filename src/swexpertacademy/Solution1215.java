@@ -30,7 +30,7 @@ public class Solution1215 {
                 for (int column = 0; column <= 8 - n; column++) {
                     boolean check = true;
                     for (int i = 0; i < n / 2; i++) {
-                        if (!(map[row][column + i] == map[row][column + n - 1 - i])) {
+                        if (map[row][column + i] != map[row][column + n - 1 - i]) {
                             check = false;
                             break;
                         }
@@ -44,7 +44,7 @@ public class Solution1215 {
                 for (int row = 0; row <= 8 - n; row++) {
                     boolean check = true;
                     for (int i = 0; i < n / 2; i++) {
-                        if (!(map[row + i][column] == map[row + n - 1 - i][column])) {
+                        if (map[row + i][column] != map[row + n - 1 - i][column]) {
                             check = false;
                             break;
                         }
